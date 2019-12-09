@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Encuesta">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="169dp"
+        app:srcCompat="@drawable/inmersoft" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginBottom="-76dp"
+        android:text=" ¿Por qué eligió este centro educativo? "
+        android:textColor="#0A0808"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="-42dp"
+        android:text="ENCUESTA"
+        android:textColor="#D80E0E"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginBottom="-58dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginBottom="188dp"
+        android:text=" ¿Qué deportes practica? "
+        android:textColor="#0A0808"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/ckbNatacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginBottom="-82dp"
+        android:text="Natación" />
+
+    <CheckBox
+        android:id="@+id/ckbKarate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginBottom="-122dp"
+        android:text="Karate" />
+
+    <CheckBox
+        android:id="@+id/ckbAtletismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginBottom="-39dp"
+        android:text="Atletismo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginBottom="-285dp"
+        android:text=" ¿Está interesado en aprender otro idioma aparte de inglés.? "
+        android:textColor="#0A0808"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/RadioGruop"
+        android:layout_width="96dp"
+        android:layout_height="114dp"
+
+        android:layout_above="@+id/textView3"
+        android:layout_marginBottom="-168dp">
+
+        <CheckBox
+            android:id="@+id/rbSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SI" />
+
+        <CheckBox
+            android:id="@+id/rbNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NO" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnEnviarEncuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-162dp"
+        android:onClick="Resumen"
+        android:text="Enviar" />
+</RelativeLayout>
